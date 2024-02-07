@@ -14,7 +14,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/metal-fundo.jpg); 
+    background-image: url(img/teste.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,14 +32,6 @@ body::before {
     }
 }
 
-#generation{
-    max-width: 20vw; 
-    max-height: 10vh;
-    width: auto; /* permitir que a largura seja ajustada automaticamente */
-    height: auto;
-
-}
-
 #menu {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -50,14 +42,23 @@ body::before {
     flex: content;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding: 2.5% 0 2.5% 0;
 }
 
 #menu a {
     text-decoration: none;
     position: relative;
     color: #fff;
-    margin: 5px;
+    margin: 10px;
     font-size: 95%;
+  }
+
+  #menu ul{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin: auto 0;
+    padding: 0 22px;
   }
   
   #menu a:hover {
@@ -151,6 +152,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     display: flex;
+    flex-wrap: wrap;
 }
 
 table td {
