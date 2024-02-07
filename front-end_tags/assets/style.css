@@ -137,7 +137,34 @@ h1 {
     justify-content: center; /* Centraliza o conteúdo na direção (vertical) */
 }
 
+#content-hard-skills {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid rgb(181, 244, 244);
+}
+
+table td a {
+    text-decoration: none;
+}
+
+table td a:hover img {
+    opacity: 0.7;
+}
 
 footer{
     height: 59px;
