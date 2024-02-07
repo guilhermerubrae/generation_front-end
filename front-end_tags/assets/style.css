@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(32, 38, 28);
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    position: relative; /* Adicione uma posição relativa ao body */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Fixe o elemento pseudo no fundo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/metal-fundo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.1; /* Define a opacidade desejada para o fundo */
+    animation: backgroundGhost 7s linear infinite;
+    z-index: -1; /* Coloque o fundo atrás do conteúdo */
+}
+
+@keyframes backgroundGhost {
+    0%, 100% {
+        opacity: 0.6; /* Opacidade inicial e final */
+    }
+    59% {
+        opacity: 1; /* Opacidade máxima no meio da animação */
+    }
+}
+
+#generation{
+    max-width: 20vw; 
+    max-height: 10vh;
+    width: auto; /* permitir que a largura seja ajustada automaticamente */
+    height: auto;
+
+}
+
+#menu {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content:start;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex: content;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#menu a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    margin: 5px;
+    font-size: 95%;
+  }
+  
+  #menu a:hover {
+    color: #9be2e0;
+  }
+  
+  #menu a:hover::after {
+    width: 100%;
+  }
+  
+  #menu a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: linear-gradient(to right, #9be2e0, rgb(255, 255, 255));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+a {
+    color: rgb(181, 244, 244);
+    text-decoration: none;
+}
+#menu li {
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#foto-gui{
+    width: 285px;
+}
+
+h1, h2 {
+    margin: 10% 0 1% 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h1 {
+    animation: mudaColor 6s linear infinite; /* Define a animação para mudar a cor */
+}
+
+@keyframes mudaColor {
+    0% { color: rgb(191, 222, 231); }
+    25% { color: rgb(66, 81, 55); } 
+    50% { color: rgb(36, 99, 97); } 
+    75% { color: rgb(189, 220, 142); } 
+    100% { color: rgb(181, 244, 244); } /* Define a cor final */
+}
+
+#content{
+    padding: 5% 15% 0 15%;
+}
+
+#content-portfolio{
+    padding: 0% 15% 2% 15%;
+}
+
+#content-lados {
+    display: flex; /* Torna os filhos flexíveis */
+}
+
+#content-left,
+#content-right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5% 5% 5% 0; /* Adiciona espaçamento entre as divs */
+}
+
+#content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Posiciona o conteúdo na direção (horizontal) */
+    justify-content: center; /* Centraliza o conteúdo na direção (vertical) */
+}
+
+
+
+footer{
+    height: 59px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
