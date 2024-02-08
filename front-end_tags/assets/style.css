@@ -206,7 +206,7 @@ footer {
 
 audio {
   width: 100%; /* Define a largura do elemento de áudio para ocupar 100% da largura do seu contêiner pai */
-  margin-top: 10px; /* Adiciona um espaçamento superior */
+  margin: 1% 0 10% 0; /* Adiciona um espaçamento superior */
   background-color: #f1f1f1; /* Cor de fundo dos controles (para navegadores WebKit, como o Chrome e o Safari) */
 }
 
@@ -221,5 +221,9 @@ p, ul {
     -webkit-background-clip: text; /* Adicionado para compatibilidade com navegadores Webkit (Safari, Chrome) */
     color: transparent; /* Tornar o texto transparente */
     background-image: linear-gradient(to right, #ffffff, rgb(160, 236, 221));
+}
+
+#img-perfil img{
+    width: 200px;
 }
 
