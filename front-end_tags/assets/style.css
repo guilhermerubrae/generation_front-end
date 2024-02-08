@@ -222,6 +222,8 @@ p, ul {
     color: transparent; /* Tornar o texto transparente */
     background-image: linear-gradient(to right, #ffffff, rgb(147, 193, 185));
     font-weight: bold;
+    letter-spacing: 0.5px;
+
 }
 
 #img-perfil img{
