@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #000000;
+  background: linear-gradient(to bottom, #02020e, #000000);
+  background-repeat: no-repeat;
+  height: 1200px;
+}
+
+#espacamento{
+    margin: 0 11% 0 11%;
+}
+
+/* header */
+header{
+  background-color: #c91a1a00;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu img, .home img, .explorar img, .biblioteca img, .user img  {
+  width: 24px;
+  height: 24px;
+}
+
+.logo img {
+    width: 80px;
+    height: 24px;
+    border-radius: 100px;
+}
+.search {
+  position: relative;
+}
+
+.search-input {
+  padding: 10px 30px 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: auto; /* Alterando a largura para auto */
+  max-width: 400px;
+  width: 400px;
+  background: linear-gradient(to bottom, #181826, #141d28);}
+
+.search-icon {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* header */
+
+/* user */
+#content-lado {
+    display: flex; /* Torna os filhos flexíveis */
+  }
+  
+  #content-left,
+  #content-right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 5% 5% 5% 0; /* Adiciona espaçamento entre as divs */
+  }
+  
+  #content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Posiciona o conteúdo na direção (horizontal) */
+    justify-content: center; /* Centraliza o conteúdo na direção (vertical) */
+  }
+/* user */
+
+/* categoria - albuns*/
+.linha, .albuns{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.div-categoria {
+  background-color: rgba(40, 54, 67, 0.277);
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 20%;
+}
+
+.categoria {
+  font-size: 16px;
+  color: #ffffffcf;
+}
+/* categoria */
+
+/* user */
+/* user */
+
+/* albuns */
+.img-album{
+    width: 160px;
+    height: 160px;
+}
+/* albuns */
+
+/* audio */
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  padding: 10px;
+  border-top: 2px solid #ffffff;
+  width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+aud-controls{
+  background-color: #000000;
+}
+
+aud-source{
+      background-color: #000000;
+}
+
+.content {
+  padding-top: 50px;
+  width: 100%;
+}
+/* audio */
