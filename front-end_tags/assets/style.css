@@ -220,7 +220,8 @@ p, ul {
     background-clip: text;
     -webkit-background-clip: text; /* Adicionado para compatibilidade com navegadores Webkit (Safari, Chrome) */
     color: transparent; /* Tornar o texto transparente */
-    background-image: linear-gradient(to right, #ffffff, rgb(160, 236, 221));
+    background-image: linear-gradient(to right, #ffffff, rgb(147, 193, 185));
+    font-weight: bold;
 }
 
 #img-perfil img{
