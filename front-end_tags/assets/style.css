@@ -33,7 +33,12 @@ body::before {
   }
 }
 
+header{
+  background-image: url(img/main.jpg);
+}
+
 #menu {
+  background-image: url(img/main.jpg);
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: start;
@@ -194,6 +199,7 @@ table td a:hover img {
 }
 
 footer {
+  background-image: url(img/main.jpg);
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
