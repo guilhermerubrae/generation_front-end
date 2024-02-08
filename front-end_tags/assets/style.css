@@ -19,7 +19,7 @@ body::before {
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.1; /* Define a opacidade desejada para o fundo */
-  animation: backgroundGhost 7s linear infinite;
+  animation: backgroundGhost 6s linear infinite;
   z-index: -1; /* Coloque o fundo atrás do conteúdo */
 }
 
@@ -122,7 +122,7 @@ h1 {
     color: rgb(36, 99, 97);
   }
   75% {
-    color: rgb(189, 220, 142);
+    color: rgb(155, 181, 115);
   }
   100% {
     color: rgb(181, 244, 244);
