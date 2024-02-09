@@ -7,3 +7,4 @@ function scrollFunction() {
         document.getElementById("myHeader").classList.remove("fixed-header");
     }
 }
+
