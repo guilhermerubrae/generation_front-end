@@ -13,7 +13,7 @@ body {
       #0d0d17 60%,
       #000
     ); /* Gradiente linear */
-  background-size: cover, 100% 100vh; /* Tamanho do background da imagem e do gradiente */
+  background-size: cover, 100% auto; /* Tamanho do background da imagem e do gradiente */
   background-repeat: no-repeat; /* Evita a repetição do background da imagem */
 }
 
@@ -31,6 +31,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-bottom: 1px solid #ffffff44;
 }
 
 ul {
@@ -172,6 +173,11 @@ h5, h1{
   align-items: center;
   flex-wrap: wrap;
 }
+
+.album{
+  margin-bottom: 15%;
+}
+
 .img-album {
   width: 160px;
   height: 160px;
@@ -206,9 +212,9 @@ a {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0000006d;
+  background-color: #000000;
   padding: 10px;
-  border-top: 2px solid #ffffff1a;
+  border-top: 2px solid #ffffff44;
   width: 100%;
   text-align: center;
   width: 100%;
