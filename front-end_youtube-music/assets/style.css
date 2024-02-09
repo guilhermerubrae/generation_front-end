@@ -216,10 +216,13 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
 /* albuns */
 
 /* audio */
+audio {
+width: 100%; 
+}
+
 .audio-container {
   position: fixed;
   bottom: 0;
@@ -242,51 +245,16 @@ a {
   padding-top: 50px;
   width: 100%;
 }
-
-/* Altera a cor do fundo do player de áudio para preto */
 .audio-container audio::-webkit-media-controls-panel {
   background: 
     linear-gradient(
       to bottom,
       #000e,
       #2a2a3d 
-    ); /* Gradiente linear */
-  background-size: cover, 100% auto; /* Tamanho do background da imagem e do gradiente */
-  background-repeat: no-repeat;
-  width: 100%; /* Cobrindo todo o width da div */
+    );
 }
 
-/* Altera a cor do texto dentro do player de áudio para branco */
-.audio-container audio::-webkit-media-controls {
-  color: white;
-}
-
-/* Altera a cor dos botões para branco */
-.audio-container audio::-webkit-media-controls-play-button,
-.audio-container audio::-webkit-media-controls-pause-button,
-.audio-container audio::-webkit-media-controls-seek-forward-button,
-.audio-container audio::-webkit-media-controls-seek-back-button {
-  color: white;
-}
-
-/* Altera a cor do botão de pausa */
-.audio-container audio::-webkit-media-controls-pause-button {
-  background-color: red;
-}
-
-/* Altera a cor do botão de avanço rápido */
-.audio-container audio::-webkit-media-controls-seek-back-button {
-  background-color: blue;
-}
-
-/* Altera a cor do controle de progresso e da barra de progresso */
-.audio-container audio::-webkit-media-controls-timeline,
-.audio-container audio::-webkit-media-controls-current-time-display,
-.audio-container audio::-webkit-media-controls-time-remaining-display {
-  color: white;
-}
-
-/* Altera o indicador de tempo na barra de progresso para branco */
+.audio-container audio::-webkit-media-controls-time-remaining-display,
 .audio-container audio::-webkit-media-controls-current-time-display,
 .audio-container audio::-webkit-media-controls-time-remaining-display {
   color: white;

@@ -210,7 +210,7 @@ footer {
   flex-direction: row;
 }
 
-audio {
+audio button{
   width: 100%; /* Define a largura do elemento de áudio para ocupar 100% da largura do seu contêiner pai */
   margin: 1% 0 10% 0; /* Adiciona um espaçamento superior */
   background-color: #f1f1f1; /* Cor de fundo dos controles (para navegadores WebKit, como o Chrome e o Safari) */
