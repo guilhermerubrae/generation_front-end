@@ -156,13 +156,17 @@ h1 {
   justify-content: space-between; /* Alterado para space-between */
   flex-wrap: wrap; /* Permitirá que as divs se ajustem automaticamente em várias linhas */
   margin-top: 2%;
-  margin-right: 10%;
+  margin-right: 40%;
 }
 
 .div-categoria {
   background-color: rgba(40, 54, 67, 0.277);
-  padding: 9px;
-  border-radius: 20%; /* Ajustado o border-radius */
+  padding: 0 10px;
+  margin: 1px;
+  border-radius: 15%; /* Ajustado o border-radius */
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .div-categoria:hover {
