@@ -99,10 +99,12 @@ input[type="text"] {
   padding: 5px;
 }
 
-.end {
+.right-zero {
   margin-left: auto;
   /* Move para o final da linha */
 }
+
+
 
 img {
   width: 26px;
