@@ -12,9 +12,9 @@ body {
         #0f0f1d 40%,
         #0d0d17 60%,
         #000
-      ); /* Gradiente linear */
-  background-size: cover, 100% auto; /* Tamanho do background da imagem e do gradiente */
-  background-repeat: no-repeat; /* Evita a repetição do background da imagem */
+      ); 
+  background-size: 100% auto; /* Tamanho do background da imagem e do gradiente */
+  background-repeat: no-repeat; 
 }
 
 #espacamento {
@@ -42,7 +42,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #ffffff44;
+  border-bottom: 1px solid #ffffff1a;
 }
 
 ul {
@@ -224,7 +224,6 @@ h1 {
   transform: translate(-50%, -50%);
   width: 24px;
   height: auto;
-  background-image: url("caminho/para/o/icone-de-reproducao.svg");
   background-size: cover;
 }
 
@@ -258,6 +257,7 @@ audio {
   width: 100%;
   text-align: center;
   width: 100%;
+  display: none;
 }
 
 .content {
