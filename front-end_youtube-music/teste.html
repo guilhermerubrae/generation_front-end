@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* Garante que a header ocupe toda a largura da tela */
+            z-index: 1000;
+            background-color: #1a34c9f9;
+            color: #fff;
+            padding: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #ffffff1a;
+        }
+
+        /* JavaScript */
+        .fixed-header {
+            background-color: #000;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 22px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .start {
+            padding-left: 35%;
+        }
+
+        input {
+            padding: 10px 30px 10px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: auto;
+            max-width: 25rem;
+            width: 25rem;
+            height: 2.5rem;
+            box-sizing: border-box;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, .1);
+            color: #fff;
+            border-radius: 8px;
+            border: none;
+            position: relative;
+
+        }
+
+        .search-icon {
+            position: absolute;
+            /* Adicionando position absolute */
+            left: 5px;
+            /* Posicionando 5px à esquerda */
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 22px;
+        }
+
+        .input-start {
+            margin-left: 2%;
+            position: relative;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        .end {
+            margin-left: auto;
+            /* Move para o final da linha */
+        }
+
+        img {
+            width: 26px;
+            height: auto;
+        }
+
+        .img-logo {
+            width: 80px;
+            height: 24px;
+        }
+
+        .img-border {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/menu.svg"
+                                alt="Menu" class="start"></a></div>
+                </li>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/logo.svg"
+                                alt="Logo" class="img-logo start"></a></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="input-start">
+            <input type="text" placeholder="        Pesquise músicas, álbuns, artistas, podcasts">
+            <img src="assets/img/search.svg" alt="Ícone de lupa" class="search-icon">
+        </div>
+        <nav class="end">
+            <ul>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/album (1).svg"
+                                alt="User" class="img-border"></a></div>
+                </li>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/home-page.svg"
+                                alt="Home"></a></div>
+                </li>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/explore.svg"
+                                alt="Explorar"></a></div>
+                </li>
+                <li>
+                    <div><a href="https://music.youtube.com/" class="play-link"><img src="assets/img/music-library.svg"
+                                alt="Biblioteca"></a></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

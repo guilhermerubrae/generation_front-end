@@ -25,17 +25,10 @@ body {
 header {
   position: fixed;
   top: 0;
-  width: 100%; /* Garante que a header ocupe toda a largura da tela */
-  z-index: 1000; /* Garante que a header fique acima de outros elementos */
-}
-
-/* JavaScript */
-.fixed-header {
-  background-color: #000;
-}
-
-nav {
-  background-color: #c91a1a00;
+  width: 100%;
+  /* Garante que a header ocupe toda a largura da tela */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   padding: 1px;
   display: flex;
@@ -43,6 +36,11 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #ffffff1a;
+}
+
+/* JavaScript */
+.fixed-header {
+  background-color: #000;
 }
 
 ul {
@@ -53,57 +51,67 @@ ul {
   padding: 0 22px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .start {
-  margin: 0 0.8em; /* Adicionando margem direita */
+  padding-left: 35%;
 }
 
-.start-rigth {
-  margin-right: 36.5em;
-  border: 1px solid #3c54576b;
-  border-radius: 6%;
-}
-
-.end {
-  margin: 0 0.5em;
-}
-
-.menu img,
-.home img,
-.explorar img,
-.biblioteca img,
-.user img {
-  width: 24px;
-  height: 24px;
-}
-
-.logo img {
-  width: 80px;
-  height: 24px;
-  border-radius: 100px;
-}
-
-.search {
-  position: relative;
-}
-
-.search-input {
+input {
   padding: 10px 30px 10px 10px;
   font-size: 16px;
-  border: none;
   border-radius: 5px;
   width: auto;
-  max-width: 400px;
-  width: 400px;
-  background: linear-gradient(to bottom, #1818266c, #141d287a);
+  max-width: 25rem;
+  width: 25rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+
 }
 
 .search-icon {
   position: absolute;
-  right: 405px; /* Ajustando a posição */
+  /* Adicionando position absolute */
+  left: 5px;
+  /* Posicionando 5px à esquerda */
   top: 50%;
   transform: translateY(-50%);
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
+}
+
+.input-start {
+  margin-left: 2%;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+.end {
+  margin-left: auto;
+  /* Move para o final da linha */
+}
+
+img {
+  width: 26px;
+  height: auto;
+}
+
+.img-logo {
+  width: 80px;
+  height: 24px;
 }
 
 .img-border {
