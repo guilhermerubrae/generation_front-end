@@ -18,7 +18,7 @@ body {
 }
 
 #espacamento {
-  margin: 0 7.5% 0 11%;
+  margin: 0 7.5% 0% 10%;
 }
 
 /* header */
@@ -26,7 +26,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  /* Garante que a header ocupe toda a largura da tela */
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
@@ -104,6 +103,17 @@ input[type="text"] {
   /* Move para o final da linha */
 }
 
+nav.right-zero ul {
+  padding-right: 35%;
+
+}
+
+nav.right-zero li {
+  padding-right: 8%;  /* espaçamento entre as linhas */
+} 
+nav.right-zero li:last-child {
+  margin-right: 10rem; /* Remover margem do último elemento para evitar espaço extra */
+}
 
 
 img {
@@ -172,7 +182,7 @@ h1 {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 32px;
+  height: 36px;
   min-width: 32px;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,.1);
@@ -184,9 +194,8 @@ h1 {
   color: #fff;
   border-radius: 8px;
   border: none;
-  margin: 1%;
+  margin: 0 1%;
   padding: 1%;
-  height: 36px;
 }
 
 .div-categoria:hover {
@@ -213,7 +222,7 @@ h1 {
 }
 
 .album {
-  margin-bottom: 15%;
+  margin: 0 0 15%;  
 }
 
 .img-album {
