@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+  padding-top: 70px;
+    font-family: "Roboto", sans-serif;
   color: #fff;
   background: 
     url(img/fundo.svg), /* Imagem de fundo */
@@ -23,6 +23,19 @@ body {
 }
 
 /* header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Garante que a header ocupe toda a largura da tela */
+  z-index: 1000; /* Garante que a header fique acima de outros elementos */
+}
+
+/* JavaScript */
+.fixed-header {
+  background-color: #000;
+}
+
+
 nav {
   background-color: #c91a1a00;
   color: #fff;
