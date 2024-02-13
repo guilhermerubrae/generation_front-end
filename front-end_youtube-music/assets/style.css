@@ -222,7 +222,7 @@ h1 {
 }
 
 .album {
-  margin: 0 1.9% 15%;  
+  margin: 0 0.4% 15%;  
 }
 
 .img-album {
@@ -230,6 +230,10 @@ h1 {
   height: 160px;
   border-radius: 3.5%;
   margin-bottom: 3%;
+}
+
+.img-album:hover{
+  filter: brightness(70%);
 }
 
 .album-img {
